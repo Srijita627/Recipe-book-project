@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srijita's Recipe Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍽 Srijita's Recipe Book</h1>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#" class="active">Categories</a>
+      <a href="#" class="active">About</a>
+    </nav>
+  </header>
+
+  <section class="search">
+    <h2>Find and Try Your Next Favorite Recipe</h2>
+    <input type="text" id="searchBar" placeholder="Search for recipes..." />
+  </section>
+
+  <section class="recipes">
+    <div class="card" onclick="viewRecipe('pizza')">
+      <img src="pizza.jpg" alt="Pizza" />
+      <div class="card-content">
+        <h3>Classic Margherita Pizza</h3>
+        <p>A simple pizza with tomato, mozzarella, and basil.</p>
+        <div class="ratings">⭐⭐⭐⭐⭐ (5.0)</div>
+        <div class="card-actions">
+          <span class="favorite" onclick="toggleFavorite(this)">♡</span>
+          <button class="view-btn">View Recipe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewRecipe('salad')">
+      <img src="salad.jpg" alt="Salad" />
+      <div class="card-content">
+        <h3>Fresh Green Salad</h3>
+        <p>Crispy lettuce, cucumbers, tomatoes with lemon dressing.</p>
+        <div class="ratings">⭐⭐⭐⭐ (4.0)</div>
+        <div class="card-actions">
+          <span class="favorite" onclick="toggleFavorite(this)">♡</span>
+          <button class="view-btn">View Recipe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewRecipe('pasta')">
+      <img src="pasta.jpg" alt="Pasta" />
+      <div class="card-content">
+        <h3>Creamy Alfredo Pasta</h3>
+        <p>Fettuccine pasta in a creamy white sauce with garlic.</p>
+        <div class="ratings">⭐⭐⭐⭐⭐ (5.0)</div>
+        <div class="card-actions">
+          <span class="favorite" onclick="toggleFavorite(this)">♡</span>
+          <button>View Recipe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewRecipe('burger')">
+      <img src="burger.jpg" alt="Burger" />
+      <div class="card-content">
+        <h3>Juicy Beef Burger</h3>
+        <p>A grilled burger with cheese, lettuce, and tomato.</p>
+        <div class="ratings">⭐⭐⭐⭐ (4.0)</div>
+        <div class="card-actions">
+          <span class="favorite" onclick="toggleFavorite(this)">♡</span>
+          <button>View Recipe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewRecipe('fries')">
+      <img src="fries.jpg" alt="French Fries" />
+      <div class="card-content">
+        <h3>Crispy French Fries</h3>
+        <p>Golden potato fries seasoned to perfection.</p>
+        <div class="ratings">⭐⭐⭐⭐ (4.0)</div>
+        <div class="card-actions">
+          <span class="favorite" onclick="toggleFavorite(this)">♡</span>
+          <button>View Recipe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewRecipe('icecream')">
+      <img src="icecream.jpg" alt="Ice Cream" />
+      <div class="card-content">
+        <h3>Vanilla Ice Cream</h3>
+        <p>Creamy vanilla ice cream for the perfect dessert.</p>
+        <div class="ratings">⭐⭐⭐⭐⭐ (5.0)</div>
+        <div class="card-actions">
+          <span class="favorite" onclick="toggleFavorite(this)">♡</span>
+          <button>View Recipe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for full recipe -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <div id="recipe-details"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Srijita's Recipe Book. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
