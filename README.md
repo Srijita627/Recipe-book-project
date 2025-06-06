@@ -34,4 +34,7 @@ Welcome to my **Recipe Book Project** – a responsive and visually appealing we
 - **JavaScript** – Interactivity
 
 ---
+## 👩‍💻 Author
+
+Made with ❤️ by [Srijita Datta](https://www.linkedin.com/in/srijita-datta-b06313318/)
 
